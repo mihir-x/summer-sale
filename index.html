@@ -7,34 +7,59 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Summer Sale</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+    </style>
 </head>
 
 <body>
     <!-- banner section -->
-    <header class=" bg-[#F9F6E2] w-screen">
+    <header class=" bg-[#F9F6E2]">
         <section>
             <div class="hero">
                 <div class="hero-content flex-col lg:flex-row-reverse max-w-screen-lg mx-auto md:gap-8">
-                  <img src="/images/Summer1.png" class="md:max-w-sm rounded-lg" />
-                  <div class="text-center space-y-2 md:space-y-8">
-                    <p class="text-sm md:text-2xl font-medium">---SALE FEVER---</p>
-                    <h1 class="text-xl md:text-5xl font-bold">Purchase TK 200 or above & get <span class="text-[#E527B2]">20% off</span></h1>
-                    <p class="py-6 font-medium md:text-lg">Use Promo Code <button class="ml-2 py-2 px-4 rounded-lg bg-[#E527B2] text-white">SELL200</button></p>
-                  </div>
+                    <img src="/images/Summer1.png" class="md:max-w-sm rounded-lg" />
+                    <div class="text-center space-y-2 md:space-y-8">
+                        <p class="text-sm md:text-2xl font-medium">---SALE FEVER---</p>
+                        <h1 class="text-xl md:text-5xl font-bold">Purchase TK 200 or above & get <span
+                                class="text-[#E527B2]">20% off</span></h1>
+                        <p class="py-6 font-medium md:text-lg">Use Promo Code <button
+                                class="ml-2 py-2 px-4 rounded-lg bg-[#E527B2] text-white">SELL200</button></p>
+                    </div>
                 </div>
-              </div>
+            </div>
         </section>
     </header>
     <!-- body section -->
-    <main>
-        <section>
+    <main class="bg-[#F8F8F8]">
+        <section class="max-w-screen-lg mx-auto flex flex-col md:flex-row gap-4 py-6 md:py-24 ">
             <!-- card section -->
-            <div>
-
+            <div class="flex-1">
+                
             </div>
             <!-- cart section -->
-            <div>
+            <div class="flex flex-col gap-4 items-center">
+                <div class="bg-white p-2 md:p-6 space-y-4 rounded-lg w-[16rem]">
+                    <h1 class="font-medium text-lg">Have coupon?</h1>
+                    <div class="relative">
+                        <input type="text" class="border border-[#11111126] h-[2.5rem] w-[8rem] px-2 rounded-l-lg" placeholder="Coupon code">
+                        <button class="absolute bg-[#E527B2] h-[2.5rem] px-4 font-semibold text-sm text-white rounded-r-lg">Apply</button>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg md:p-6 w-[16rem] relative">
+                    <div class="space-y-2 border-b border-[#11111126] mt-4">
 
+                    </div>
+                    <div class="space-y-2 border-b border-[#11111126] mt-4 mb-6">
+                        <h1 class="font-medium">Total Pride: <span></span></h1>
+                        <h1 class="font-medium">Discount: <span></span></h1>
+                        <h1 class="font-medium">Total: <span></span></h1>
+                    </div>
+                    <button class="absolute left-9 bg-[#E527B2] px-10 py-3 rounded-lg text-white font-semibold">Make Purchase</button>
+                </div>
             </div>
         </section>
     </main>
