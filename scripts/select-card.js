@@ -19,6 +19,18 @@ function selectCard(card){
     //calculate and set the total cost in the total price field
     totalPrice += price;
     totalPriceField.innerText = `${totalPrice} Tk`
-    console.log(totalPrice);
 
+    //enabling make purchase button
+    const makePurchase = document.getElementById('make-purchase');
+    if(totalPrice > 0){
+        makePurchase.classList.remove('btn-disabled');
+        makePurchase.style.backgroundColor = '#E527B2';
+    }
+
+    //enabling apply button
+    const applyBtn = document.getElementById('apply');
+    if(totalPrice >= 200){
+        applyBtn.classList.remove('btn-disabled');
+        applyBtn.style.backgroundColor = '#E527B2';
+    }
 }
