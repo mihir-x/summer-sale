@@ -9,5 +9,5 @@ function applyClicked(apply){
     }
     discountField.innerText = `${discount.toFixed(2)} Tk`;
     const totalAfterDiscount = totalPrice - discount;
-    totalField.innerText = `${totalAfterDiscount} Tk`;
+    totalField.innerText = `${totalAfterDiscount.toFixed(2)} Tk`;
 }

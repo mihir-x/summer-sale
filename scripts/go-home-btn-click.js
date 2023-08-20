@@ -8,4 +8,8 @@ function goHome(goH){
     document.getElementById('apply').style.backgroundColor = '#d898c7';
     document.getElementById('make-purchase').classList.add('btn-disabled');
     document.getElementById('make-purchase').style.backgroundColor = '#d898c7';
+    count = 0;
+    totalPrice = 0;
+    totalDiscount = 0;
+    finalCost = 0;
 }
