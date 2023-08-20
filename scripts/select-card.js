@@ -6,8 +6,6 @@ function selectCard(card){
     const name = card.querySelector('h2').innerText;
     const price = parseFloat(card.querySelector('span').innerText);
     const totalPriceField = document.getElementById('total-price');
-    const discountField = document.getElementById('discount');
-    const totalField = document.getElementById('total');
     const shoppingList = document.getElementById('shopping-list');
 
     //write the product name in the shopping list
@@ -33,4 +31,5 @@ function selectCard(card){
         applyBtn.classList.remove('btn-disabled');
         applyBtn.style.backgroundColor = '#E527B2';
     }
+
 }
