@@ -7,6 +7,8 @@ function selectCard(card){
     const price = parseFloat(card.querySelector('span').innerText);
     const totalPriceField = document.getElementById('total-price');
     const shoppingList = document.getElementById('shopping-list');
+    const discountField = document.getElementById('discount');
+    const totalField = document.getElementById('total');
 
     //write the product name in the shopping list
     const h3 = document.createElement('h3');
@@ -16,7 +18,9 @@ function selectCard(card){
 
     //calculate and set the total cost in the total price field
     totalPrice += price;
-    totalPriceField.innerText = `${totalPrice} Tk`
+    totalPriceField.innerText = `${totalPrice.toFixed(2)} Tk`
+    discountField.innerText = `${totalDiscount.toFixed(2)} Tk`;
+    totalField.innerText = `${totalPrice.toFixed(2)} Tk`;
 
     //enabling make purchase button
     const makePurchase = document.getElementById('make-purchase');
